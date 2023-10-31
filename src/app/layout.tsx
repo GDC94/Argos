@@ -4,8 +4,6 @@ import { GeistSans } from "geist/font";
 
 import "./globals.css";
 
-
-
 export const metadata: Metadata = {
   title: "GDC - Portfolio",
   description: "Next Js 14",
