@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "german-derbes-catoni",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "formatter":"pnpm run lint --fix"
   },
   "dependencies": {
     "@emotion/core": "^11.0.0",
@@ -19,7 +20,8 @@
     "geist": "^1.0.0",
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.0.1",
