@@ -1,9 +1,13 @@
-import styles from "./page.module.css";
+"use client";
+
+import { MainLayout } from "@/layouts/mainLayout";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Front end developer portfolio</h1>
-    </main>
+    <MainLayout>
+      <main>
+        <h1>Front end developer portfolio</h1>
+      </main>
+    </MainLayout>
   );
 }
