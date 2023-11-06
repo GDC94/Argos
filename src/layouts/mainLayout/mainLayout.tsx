@@ -1,22 +1,13 @@
-import React from "react";
+"use client";
 
-import GlobalStyles from "@/components/globalStyles";
+import { Layout } from "@/components/commons/layoutClient";
 
-import { LayoutContainer, LayoutWrapper } from "./mainLayout.styles";
-
-export interface MainLayoutProps {
-  children?: React.ReactNode;
+export default function MainLayout({
+  children,
+  full,
+}: {
+  children: React.ReactNode;
   full?: boolean;
-}
-
-export function MainLayout({ children, full }: MainLayoutProps) {
-  return (
-    <LayoutContainer>
-      <GlobalStyles />
-      <LayoutWrapper>
-        {children}
-        {!full && <h2>footer</h2>}
-      </LayoutWrapper>
-    </LayoutContainer>
-  );
+}) {
+  return <Layout full={full}>{children}</Layout>;
 }

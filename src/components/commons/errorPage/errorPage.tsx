@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { MainLayout } from "@/layouts/mainLayout";
+import MainLayout from "@/layouts/mainLayout/mainLayout";
 
 import {
   ErrorContainer,

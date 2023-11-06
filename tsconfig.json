@@ -25,9 +25,7 @@
       }
     ],
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/layouts/*": ["src/layouts/*"],
-      "@/config/*": ["src/config/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -38,7 +36,7 @@
     "components",
     "styles/pages/404",
     ".next/types/**/*.ts"
-  ],
+, "src/utils/project-readers/file-helpers.js"  ],
   "exclude": [
     "node_modules"
   ]

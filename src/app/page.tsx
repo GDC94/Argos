@@ -1,6 +1,4 @@
-"use client";
-
-import { MainLayout } from "@/layouts/mainLayout";
+import MainLayout from "@/layouts/mainLayout/mainLayout";
 
 export default function Home() {
   return (

@@ -6,6 +6,7 @@ module.exports = {
   root: true,
   plugins: ["prettier", "import", "@typescript-eslint"],
   extends: [
+    "next/core-web-vitals",
     require.resolve("@vercel/style-guide/eslint/typescript"),
     require.resolve("@vercel/style-guide/eslint/react"),
     require.resolve("@vercel/style-guide/eslint/next"),
@@ -42,16 +43,7 @@ module.exports = {
     "import/order": [
       "warn",
       {
-        groups: [
-          "type",
-          "builtin",
-          "object",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-        ],
+        groups: ["type", "builtin", "object", "external", "internal", "parent", "sibling", "index"],
         pathGroups: [
           {
             pattern: "~/**",
