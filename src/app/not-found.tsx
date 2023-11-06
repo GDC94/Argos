@@ -1,6 +1,6 @@
 "use client";
 
-import ErrorPage from "@/components/commons/errorPage";
+import ErrorPage from "@/components/commons/ErrorPage";
 
 export function ErrorPage404() {
   return <ErrorPage statusCode="400" message="Page not found!" />;

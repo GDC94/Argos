@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import MainLayout from "@/layouts/mainLayout/mainLayout";
+import { Layout } from "../LayoutClient";
 
 import {
   ErrorContainer,
@@ -10,7 +10,7 @@ import {
   Message,
   MessageLine,
   ButtonWrapper,
-} from "./errorPage.styles";
+} from "./ErrorPage.styles";
 
 interface ErrorPageProps {
   statusCode?: string | number;
@@ -21,7 +21,7 @@ interface ErrorPageProps {
 
 export function ErrorPage({ statusCode, message }: ErrorPageProps) {
   return (
-    <MainLayout full>
+    <Layout full>
       <Head>
         <title>😔 Something went wrong </title>
       </Head>
@@ -37,7 +37,7 @@ export function ErrorPage({ statusCode, message }: ErrorPageProps) {
           </MessageButton>
         </ErrorNumberAndMessage>
       </ErrorContainer>
-    </MainLayout>
+    </Layout>
   );
 }
 

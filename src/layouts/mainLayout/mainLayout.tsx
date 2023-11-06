@@ -1,13 +1,12 @@
 "use client";
 
-import { Layout } from "@/components/commons/layoutClient";
+import { Layout } from "@/components/commons/LayoutClient";
+import FrontPage from "@/components/FrontPage";
 
-export default function MainLayout({
-  children,
-  full,
-}: {
-  children: React.ReactNode;
-  full?: boolean;
-}) {
-  return <Layout full={full}>{children}</Layout>;
+export default function MainLayout() {
+  return (
+    <Layout full>
+      <FrontPage />
+    </Layout>
+  );
 }
