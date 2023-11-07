@@ -3,7 +3,7 @@ import { FrontEndDevTag, Wrapper } from "./FrontPage.styles";
 function FrontPage() {
   return (
     <Wrapper>
-      <FrontEndDevTag>Frontend developer</FrontEndDevTag>
+      <FrontEndDevTag>Front end DEVELOPER</FrontEndDevTag>
     </Wrapper>
   );
 }

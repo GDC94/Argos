@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
 `;
 
 export const FrontEndDevTag = styled.h2`
-  font-size: clamp(3rem, 11vw + 1rem, 19rem);
-
-  color: white;
+  font-size: clamp(3rem, 12vw + 1rem, 19rem);
+  color: hsl(0deg, 0%, 100%);
 `;

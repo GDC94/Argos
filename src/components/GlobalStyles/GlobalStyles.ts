@@ -11,7 +11,8 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
 }
 html {
-  --body-color: hsl(0, 0%, 0%);
+  --body-bgcolor: rgb(255, 225, 0);
+  --bebas-neue: 'Bebas Neue', sans-serif;
   scrollbar-gutter: stable;
 }
 /* Set core root defaults */
@@ -24,7 +25,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--body-color);
+  background-color: var(--body-bgcolor);
+  font-family: var(--bebas-neue);
 }
 img,
 picture,

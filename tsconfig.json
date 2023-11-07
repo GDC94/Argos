@@ -36,7 +36,7 @@
     "components",
     "styles/pages/404",
     ".next/types/**/*.ts"
-, "src/utils/project-readers/file-helpers.js"  ],
+, "src/utils/project-readers/file-helpers.js", "src/components/Flag/Flag.js"  ],
   "exclude": [
     "node_modules"
   ]

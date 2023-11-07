@@ -1,6 +1,6 @@
 export const theming = {
   colors: {
-    primary: "hsl(245deg 100% 60%)",
+    primary: "hsl(210deg, 30%, 8%)",
   },
 
   transitions: {
@@ -9,8 +9,6 @@ export const theming = {
 
   fonts: {
     Montserrat: "'Montserrat', sans-serif",
-    Rubik: "'Rubik', sans-serif",
-    SpaceMono: "'Space Mono', monospace",
   },
 };
 
