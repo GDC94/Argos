@@ -1,6 +1,7 @@
 export const theming = {
   colors: {
-    primary: "hsl(210deg, 30%, 8%)",
+    /**primary: "hsl(210deg, 30%, 8%)",,*/
+    primary: "#0e141b",
   },
 
   transitions: {

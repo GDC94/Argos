@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 
+import localFont from "next/font/local";
+
 import ThemeClient from "@/components/commons/ThemeClient";
 
 import StyledComponentsRegistry from "./lib/registry";
@@ -10,9 +12,11 @@ export const metadata: Metadata = {
   description: "Next Js 14",
 };
 
+const tanker = localFont({ src: "./fonts/Tanker-Regular.ttf" });
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={tanker.className}>
       <head>
         {/* Favicon */}
 

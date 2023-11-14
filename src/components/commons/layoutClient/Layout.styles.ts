@@ -11,7 +11,6 @@ export const LayoutContainer = styled.div`
 export const LayoutWrapper = styled.div`
   width: 100%;
   z-index: 2;
-  position: relative;
 `;
 
 export const Container = styled.div`

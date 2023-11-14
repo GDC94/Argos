@@ -1,7 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
@@ -11,8 +14,8 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
 }
 html {
-  --body-bgcolor: rgb(255, 225, 0);
-  --bebas-neue: 'Bebas Neue', sans-serif;
+  --body-bgcolor: #9b6dff;
+  --bebas-neue: 'PT Sans Narrow', sans-serif;
   scrollbar-gutter: stable;
 }
 /* Set core root defaults */
@@ -26,7 +29,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: var(--body-bgcolor);
-  font-family: var(--bebas-neue);
+
+
 }
 img,
 picture,

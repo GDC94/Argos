@@ -19,6 +19,8 @@
     "autoprefixer": "^10.4.16",
     "geist": "^1.0.0",
     "gray-matter": "^4.0.3",
+    "gsap": "^3.12.2",
+    "lodash.range": "^3.2.0",
     "next": "14.0.1",
     "next-mdx-remote": "^4.4.1",
     "react": "^18",
