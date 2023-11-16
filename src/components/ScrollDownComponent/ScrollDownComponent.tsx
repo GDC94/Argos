@@ -1,7 +1,11 @@
-import { Wrapper } from "./ScrollDownComponent.styles";
+import { Wrapper, WrapperInto } from "./ScrollDownComponent.styles";
 
 function ScrollDownComponent() {
-  return <Wrapper />;
+  return (
+    <Wrapper>
+      <WrapperInto />
+    </Wrapper>
+  );
 }
 
 export default ScrollDownComponent;

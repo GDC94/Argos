@@ -13,7 +13,7 @@ const oscillate = keyframes`
 export const Flag = styled.div`
   display: flex;
   aspect-ratio: 3 / 2;
-  width: 110px;
+  width: 6rem;
 `;
 
 export const FlagWrapper = styled.div`

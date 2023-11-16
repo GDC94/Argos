@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Next Js 14",
 };
 
-const tanker = localFont({ src: "./fonts/Tanker-Regular.ttf" });
+const tanker = localFont({ src: "./fonts/national.otf" });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

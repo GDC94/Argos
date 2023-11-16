@@ -9,8 +9,9 @@ import {
   Wrapper,
   WrapperLeft,
   RowTop,
-  AvailableForWork,
   RowDown,
+  Content,
+  AvailableForWork,
 } from "./FrontPage.styles";
 
 function FrontPage() {
@@ -22,14 +23,16 @@ function FrontPage() {
           <FrontPageTag>Portfolio 2023</FrontPageTag>
         </FrontPageTitles>
         <WrapperLeft>
-          <FrontEndDevTag>Front end developer.</FrontEndDevTag>
-          <FrontEndDevSubTag>based in Argentina</FrontEndDevSubTag>
-          <FlagComponent />
+          <FrontEndDevTag>FRONT END DEVELOPER</FrontEndDevTag>
+          <Content>
+            <FrontEndDevSubTag>BASED IN ARGENTINA</FrontEndDevSubTag>
+            <FlagComponent />
+          </Content>
         </WrapperLeft>
         <FrontPageTitles>
-          <AvailableForWork>Available for freelance work</AvailableForWork>
-          <AvailableForWork>Available for freelance work</AvailableForWork>
-        </FrontPageTitles>
+            <AvailableForWork>Available for freelance work</AvailableForWork>
+            <AvailableForWork>Available for freelance work</AvailableForWork>
+          </FrontPageTitles>
       </RowTop>
       <RowDown>
         <ScrollDownComponent />

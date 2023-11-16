@@ -7,6 +7,11 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background-image: url("./banda.png"); /* Ruta de la imagen de fondo */
+  background-size: contain; /* Cubre todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: repeat; /* Evita que la imagen se repita */
 `;
 
 export const RowTop = styled.div`
@@ -21,21 +26,20 @@ export const WrapperLeft = styled.div`
   padding: 5rem;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FrontEndDevTag = styled.h2`
-  font-size: clamp(2rem, 12vw + 1rem, 11.5rem);
+  font-size: clamp(2rem, 9vw + 5rem, 12rem);
   color: #f6f6f6;
-  letter-spacing: 4px;
-  line-height: 8rem;
+  line-height: 0.8;
 `;
 
 export const FrontEndDevSubTag = styled.h5`
-  font-size: clamp(1rem, 6vw + 1rem, 5rem);
-  color: #f6f6f6;
+  font-size: clamp(1rem, 4vw + 1rem, 6rem);
+  color: #ffffff;
   letter-spacing: 2px;
-
-  color: white;
 `;
 
 export const WrapperRight = styled.div`
@@ -74,8 +78,8 @@ export const FrontPageTitles = styled.div`
 `;
 
 export const FrontPageTag = styled.p`
-  font-size: 1.5rem;
-  color: #ffd500;
+  font-size: 2rem;
+  color: #e3fc7b;
 `;
 
 export const AvailableForWork = styled.p`
@@ -89,4 +93,11 @@ export const RowDown = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 3rem;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 `;
