@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
 }
 html {
-  --body-bgcolor: #9b6dff;
+  --body-bgcolor: hsl(225deg 10% 7.84%);
   --bebas-neue: 'PT Sans Narrow', sans-serif;
   scrollbar-gutter: stable;
 }

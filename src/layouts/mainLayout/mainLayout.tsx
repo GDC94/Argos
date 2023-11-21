@@ -1,5 +1,4 @@
 "use client";
-
 import { Layout } from "@/components/commons/LayoutClient";
 import FrontPage from "@/components/FrontPage";
 

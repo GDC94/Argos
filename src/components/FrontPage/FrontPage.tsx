@@ -1,42 +1,15 @@
-import FlagComponent from "../Flag/Flag";
-import ScrollDownComponent from "../ScrollDownComponent/ScrollDownComponent";
+import FrontPageTitles from "../FrontPageTitles";
+import Header from "../Header";
 
-import {
-  FrontEndDevSubTag,
-  FrontEndDevTag,
-  FrontPageTitles,
-  FrontPageTag,
-  Wrapper,
-  WrapperLeft,
-  RowTop,
-  RowDown,
-  Content,
-  AvailableForWork,
-} from "./FrontPage.styles";
+import { Wrapper, RowTop } from "./FrontPage.styles";
 
 function FrontPage() {
   return (
     <Wrapper>
       <RowTop>
-        <FrontPageTitles>
-          <FrontPageTag>German Derbes Catoni</FrontPageTag>
-          <FrontPageTag>Portfolio 2023</FrontPageTag>
-        </FrontPageTitles>
-        <WrapperLeft>
-          <FrontEndDevTag>FRONT END DEVELOPER</FrontEndDevTag>
-          <Content>
-            <FrontEndDevSubTag>BASED IN ARGENTINA</FrontEndDevSubTag>
-            <FlagComponent />
-          </Content>
-        </WrapperLeft>
-        <FrontPageTitles>
-            <AvailableForWork>Available for freelance work</AvailableForWork>
-            <AvailableForWork>Available for freelance work</AvailableForWork>
-          </FrontPageTitles>
+        <Header />
+        <FrontPageTitles />
       </RowTop>
-      <RowDown>
-        <ScrollDownComponent />
-      </RowDown>
     </Wrapper>
   );
 }
