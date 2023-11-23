@@ -7,10 +7,17 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
-  padding: 2rem;
 `;
 
 export const RowTop = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+`;
+
+export const RowDown = styled.div`
+  display: flex;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
 `;

@@ -1,4 +1,4 @@
-import FlagComponent from "../Flag/Flag";
+import FlagComponent from "../../../../Flag/Flag";
 
 import {
   Content,
