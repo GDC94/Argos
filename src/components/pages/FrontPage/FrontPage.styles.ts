@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
   height: 100vh;
+  /*Altura de la ventana gráfica dinámica*/
+  height: 100dvh;
   width: 100%;
   background-image: url("./banda.png");
   background-size: contain;

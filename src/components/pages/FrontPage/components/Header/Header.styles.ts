@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
+
+  @media ${(props) => props.theme.phoneAndSmaller} {
+  }
 `;
 
 export const FrontPageTag = styled.p`

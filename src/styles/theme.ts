@@ -1,4 +1,22 @@
-export const theming = {
+export const WEIGHTS = {
+  normal: 500,
+  medium: 600,
+  bold: 800,
+};
+
+export const BRAEKPOINTS = {
+  phone: 600,
+  tablet: 900,
+  laptop: 1300,
+};
+
+export const QUERIES = {
+  phoneAndSmaller: `(max-width: ${BRAEKPOINTS.phone / 16}rem)`,
+  tabletAndSmaller: `(max-width: ${BRAEKPOINTS.tablet / 16}rem)`,
+  laptopAndSmaller: `(max-width: ${BRAEKPOINTS.laptop / 16}rem)`,
+};
+
+export const THEMING = {
   colors: {
     /**primary: "hsl(210deg, 30%, 8%)",,*/
     primary: "#0e141b",
@@ -15,14 +33,23 @@ export const theming = {
   transitions: {
     "0.3s": "all 0.3s cubic-bezier(.51,.92,.24,1.15);",
   },
-
+  size: {
+    "0.5rem": "0.5rem",
+    "0.75rem": "0.75rem",
+    "1rem": "1rem",
+    "1.25rem": "1.25rem",
+    "1.5rem": "1.5rem",
+  },
   fonts: {
     Montserrat: "'Montserrat', sans-serif",
   },
 };
 
 export const theme = {
-  ...theming,
+  ...THEMING,
+  ...QUERIES,
+  ...BRAEKPOINTS,
+  ...WEIGHTS,
 };
 
 export type MainTheme = typeof theme;

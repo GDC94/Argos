@@ -1,12 +1,6 @@
 import FlagComponent from "../../../../Flag/Flag";
 
-import {
-  Content,
-  FrontEndDevSubTag,
-  FrontEndDevTag,
-  Light,
-  Wrapper,
-} from "./FrontPageTitles.styles";
+import { Content, FrontEndDevSubTag, FrontEndDevTag, Wrapper } from "./FrontPageTitles.styles";
 
 function FrontPageTitles() {
   return (
@@ -16,7 +10,8 @@ function FrontPageTitles() {
         <FrontEndDevSubTag>BASED IN ARGENTINA</FrontEndDevSubTag>
         <FlagComponent />
       </Content>
-      <Light />
+      {/*<Light />
+       */}{" "}
     </Wrapper>
   );
 }

@@ -4,6 +4,7 @@ import { Wrapper, RowTop, RowDown } from "./FrontPage.styles";
 import Header from "./components/Header";
 import FrontPageTitles from "./components/FrontPageTitles";
 import FreelanceTags from "./components/FreelanceTags";
+import { Light } from "./components/FrontPageTitles/FrontPageTitles.styles";
 
 function FrontPage() {
   return (
@@ -26,6 +27,7 @@ function FrontPage() {
       </RowDown>
       */}
       </Wrapper>
+      <Light />
     </ContainerWrap>
   );
 }

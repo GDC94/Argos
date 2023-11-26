@@ -1,11 +1,7 @@
-import { AvailableTag, Wrapper } from "./FreelanceTags.styles";
+import { Wrapper } from "./FreelanceTags.styles";
 
 function FreelanceTags() {
-  return (
-    <Wrapper>
-      <AvailableTag>AVAILABLE FOR FREELANCE WORK</AvailableTag>
-    </Wrapper>
-  );
+  return <Wrapper />;
 }
 
 export default FreelanceTags;

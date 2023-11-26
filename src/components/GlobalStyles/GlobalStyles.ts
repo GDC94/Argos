@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /* Box sizing rules */
 
 *,

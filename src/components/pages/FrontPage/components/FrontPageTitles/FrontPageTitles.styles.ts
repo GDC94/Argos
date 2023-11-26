@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 15px;
   position: relative;
-  padding: 5rem;
   flex-direction: column;
   width: 100%;
   justify-content: center;
@@ -13,24 +12,35 @@ export const Wrapper = styled.div`
 `;
 
 export const FrontEndDevTag = styled.h2`
-  font-size: clamp(2rem, 9vw + 5rem, 11rem);
+  font-size: clamp(2rem, 5vw + 4rem, 11rem);
   color: #fff;
   line-height: 0.8;
   cursor: default;
-`;
+  margin-top: 3rem;
+  text-align: center;
 
-export const FrontEndDevSubTag = styled.h5`
-  font-size: clamp(1rem, 4vw + 1rem, 5rem);
-  color: #fff;
-  letter-spacing: 2px;
-  cursor: default;
+  @media ${(props) => props.theme.phoneAndSmaller} {
+    text-align: center;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+
+  @media ${(props) => props.theme.phoneAndSmaller} {
+    flex-direction: column;
+  }
+`;
+
+export const FrontEndDevSubTag = styled.h5`
+  font-size: clamp(1rem, 3vw + 1rem, 5rem);
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: default;
 `;
 
 export const Light = styled.div`
