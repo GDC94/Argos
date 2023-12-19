@@ -1,4 +1,5 @@
 import ContainerWrap from "@/components/commons/ContainerWrap/ContainerWrap";
+import { NavMenu } from "@/components/NavMenu";
 
 import { Left, Right, Wrapper } from "./FrontPage.styles";
 import FrontPageTitles from "./components/FrontPageTitles";
@@ -10,7 +11,10 @@ function FrontPage() {
         <Left>
           <FrontPageTitles />
         </Left>
-        <Right>right</Right>
+        <Right>
+          {" "}
+          <NavMenu />
+        </Right>
       </Wrapper>
     </ContainerWrap>
   );

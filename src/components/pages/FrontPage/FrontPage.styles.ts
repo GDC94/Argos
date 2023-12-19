@@ -8,11 +8,11 @@ Altura de la ventana gráfica dinámica*/
   height: 100dvh;
   height: 100vh;
   width: 100%;
-  /*/
-  background-image: url("./banda.png");
+  /*
+  background-image: url("./server.png");
   background-size: contain;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   */
   display: flex;
 
@@ -34,7 +34,6 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   width: 50%;
-
   height: 100%;
   @media ${QUERIES.tabletAndSmaller} {
     width: 100%;
