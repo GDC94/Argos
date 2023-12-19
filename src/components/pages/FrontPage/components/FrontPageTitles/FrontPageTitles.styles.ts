@@ -1,22 +1,26 @@
 import styled from "@emotion/styled";
 
+interface ContentProps {
+  left?: string;
+  right?: string;
+  top?: string;
+  bottom?: string;
+}
+
 export const Wrapper = styled.div`
-  height: auto;
   display: flex;
-  gap: 15px;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
 export const FrontEndDevTag = styled.h2`
-  font-size: clamp(2rem, 5vw + 4rem, 11rem);
+  font-size: clamp(5rem, 4vw + 2rem, 3rem);
   color: #fff;
-  line-height: 0.8;
+  line-height: 0.7;
   cursor: default;
-  margin-top: 3rem;
   text-align: center;
 
   @media ${(props) => props.theme.phoneAndSmaller} {
@@ -24,23 +28,28 @@ export const FrontEndDevTag = styled.h2`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<ContentProps>`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-
-  @media ${(props) => props.theme.phoneAndSmaller} {
-    flex-direction: column;
-  }
+  align-items: flex-end;
+  justify-content: flex-end;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
 `;
 
 export const FrontEndDevSubTag = styled.h5`
-  font-size: clamp(1rem, 3vw + 1rem, 5rem);
+  font-size: clamp(1rem, 2vw + 1rem, 3rem);
   color: #fff;
-  letter-spacing: 2px;
   cursor: default;
+  text-align: center;
+`;
+
+export const FlagContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 1rem;
 `;
 
 export const Light = styled.div`
@@ -49,5 +58,5 @@ export const Light = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 20%, transparent 10%, hsl(210deg 30% 8% / 60%) 40%);
+  background: radial-gradient(circle at 50% 30%, transparent 10%, hsl(210deg 30% 8% / 40%) 40%);
 `;

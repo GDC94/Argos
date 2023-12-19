@@ -1,4 +1,5 @@
 import React from "react";
+import { StyleSheetManager } from "styled-components";
 
 import GlobalStyles from "@/components/globalStyles";
 
@@ -14,8 +15,10 @@ export function Layout({ children, full }: LayoutProps) {
     <LayoutContainer>
       <GlobalStyles />
       <LayoutWrapper>
-        {children}
-        {!full && <h2>footer</h2>}
+        <StyleSheetManager shouldForwardProp={(prop) => prop !== "loaded"}>
+          {children}
+          {!full && <h2>footer</h2>}
+        </StyleSheetManager>
       </LayoutWrapper>
     </LayoutContainer>
   );

@@ -1,33 +1,17 @@
 import ContainerWrap from "@/components/commons/ContainerWrap/ContainerWrap";
 
-import { Wrapper, RowTop, RowDown } from "./FrontPage.styles";
-import Header from "./components/Header";
+import { Left, Right, Wrapper } from "./FrontPage.styles";
 import FrontPageTitles from "./components/FrontPageTitles";
-import FreelanceTags from "./components/FreelanceTags";
-import { Light } from "./components/FrontPageTitles/FrontPageTitles.styles";
 
 function FrontPage() {
   return (
     <ContainerWrap>
       <Wrapper>
-        <RowTop>
-          <Header />
+        <Left>
           <FrontPageTitles />
-        </RowTop>
-        <RowDown>
-          <FreelanceTags />
-        </RowDown>
-        {/*
-        <RowTop>
-        <Header />
-        <FrontPageTitles />
-      </RowTop>
-      <RowDown>
-        <FreelanceTags />
-      </RowDown>
-      */}
+        </Left>
+        <Right>right</Right>
       </Wrapper>
-      <Light />
     </ContainerWrap>
   );
 }

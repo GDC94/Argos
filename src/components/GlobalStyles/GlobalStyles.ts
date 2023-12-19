@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
 }
 * {
   margin: 0;
+  padding: 0;
 }
 html {
   --body-bgcolor: hsl(225deg 10% 7.84%);
@@ -26,8 +27,7 @@ body {
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   background-color: var(--body-bgcolor);
-
-
+  font-size: 16px;
 }
 img,
 picture,
@@ -51,6 +51,14 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      padding-block-start: 0;
+      padding-block-end: 0;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

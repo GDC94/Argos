@@ -1,25 +1,42 @@
 import styled from "@emotion/styled";
 
+import { QUERIES } from "@/styles/theme";
+
 export const Wrapper = styled.div`
-  height: 100vh;
-  /*Altura de la ventana gráfica dinámica*/
+  /*
+Altura de la ventana gráfica dinámica*/
   height: 100dvh;
+  height: 100vh;
   width: 100%;
+  /*/
   background-image: url("./banda.png");
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
+  */
+  display: flex;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    flex-direction: column;
+  }
 `;
 
-export const RowTop = styled.div`
+export const Left = styled.div`
+  width: 50%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+
+  @media ${QUERIES.tabletAndSmaller} {
+    width: 100%;
+  }
 `;
 
-export const RowDown = styled.div`
-  display: flex;
-  height: 50%;
-  justify-content: space-between;
-  align-items: center;
+export const Right = styled.div`
+  width: 50%;
+
+  height: 100%;
+  @media ${QUERIES.tabletAndSmaller} {
+    width: 100%;
+  }
 `;

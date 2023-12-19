@@ -3,17 +3,17 @@ import { keyframes } from "@emotion/react";
 
 const oscillate = keyframes`
   from {
-    transform: translateY(7px);
+    transform: translateY(4px);
   }
   to {
-    transform: translateY(-7px);
+    transform: translateY(-4px);
   }
 `;
 
 export const Flag = styled.div`
   display: flex;
   aspect-ratio: 3 / 2;
-  width: 5rem;
+  width: clamp(3rem, 2vw + 2rem, 4rem);
 `;
 
 export const FlagWrapper = styled.div`

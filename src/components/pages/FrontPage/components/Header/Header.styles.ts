@@ -2,15 +2,20 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem 0;
-
   @media ${(props) => props.theme.phoneAndSmaller} {
   }
 `;
 
-export const FrontPageTag = styled.p`
-  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
-  color: rgb(97 123 255);
+export const TitleTag = styled.h2`
+  font-size: clamp(5rem, 12vw + 2rem, 5rem);
+  color: #fff;
+  line-height: 0.7;
+  cursor: default;
+  text-align: center;
+  @media ${(props) => props.theme.phoneAndSmaller} {
+    text-align: center;
+  }
 `;

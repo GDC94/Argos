@@ -1,17 +1,24 @@
-import FlagComponent from "../../../../Flag/Flag";
+import FlagComponent from "@/components/Flag/Flag";
 
-import { Content, FrontEndDevSubTag, FrontEndDevTag, Wrapper } from "./FrontPageTitles.styles";
+import {
+  FlagContainer,
+  FrontEndDevSubTag,
+  FrontEndDevTag,
+  Wrapper,
+} from "./FrontPageTitles.styles";
 
 function FrontPageTitles() {
   return (
     <Wrapper>
       <FrontEndDevTag>FRONT END DEVELOPER</FrontEndDevTag>
-      <Content>
+      <FlagContainer>
         <FrontEndDevSubTag>BASED IN ARGENTINA</FrontEndDevSubTag>
+
         <FlagComponent />
-      </Content>
+      </FlagContainer>
+
       {/*<Light />
-       */}{" "}
+       */}
     </Wrapper>
   );
 }
