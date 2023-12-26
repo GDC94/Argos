@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 
 import { Layout } from "@/components/commons/LayoutClient";
-import FrontPage from "@/components/pages/FrontPage";
 import { PreLoader } from "@/components/commons/Preloader";
+import FrontPage from "@/pages/FrontPage";
 
 export default function MainLayout() {
   const [siteLoaded, setSiteLoaded] = useState<boolean>(false);

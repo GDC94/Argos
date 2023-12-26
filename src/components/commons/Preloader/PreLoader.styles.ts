@@ -13,7 +13,7 @@ export const PreloaderOverlay = styled.div<PreloaderProps>`
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #010012;
   z-index: 9999;
   transition: all 2s cubic-bezier(0.3, 0, 0, 1);
   transform: translateX(0) translateZ(0);

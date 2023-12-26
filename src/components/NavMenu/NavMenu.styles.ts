@@ -2,7 +2,7 @@
 import styled, { css } from "styled-components";
 
 interface NavProps {
-  open: boolean;
+  open?: boolean;
 }
 
 export const NavContainer = styled.div<NavProps>`
@@ -91,7 +91,6 @@ export const NavLinks = styled.nav<NavProps>`
     padding: 30px;
     margin: 0;
     color: white;
-    font-family: "N27", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 3px;
@@ -116,7 +115,6 @@ export const LinkNav = styled.a`
   padding: 30px;
   margin: 0;
   color: white;
-  font-family: "N27", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 3px;

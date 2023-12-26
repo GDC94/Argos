@@ -1,19 +1,23 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  width: 90%;
-  max-width: 1640px;
-  margin: 0 auto;
-  @media screen and (max-width: 1440px) {
-    max-width: 90%;
-  }
-  &.align-center {
-    height: 100%;
-    align-items: center;
-    display: flex;
-  }
-  @media print {
-    width: 100%;
-    min-width: 100%;
+  width: 100%;
+  bottom: unset;
+
+  &.withBackground {
+    background: linear-gradient(
+      15deg,
+      #010012,
+      #090018f2,
+      #090018e0,
+      #170041,
+      #240068,
+      #2b007b,
+      #400da9,
+      #6100fcd9,
+      #7b00ff,
+      #a016ff,
+      #ffecffb0
+    );
   }
 `;

@@ -14,8 +14,9 @@ const GlobalStyles = createGlobalStyle`
 }
 html {
   --body-bgcolor: hsl(225deg 10% 7.84%);
-  --bebas-neue: 'PT Sans Narrow', sans-serif;
+  --inter: "Inter", sans-serif;
   scrollbar-gutter: stable;
+  overscroll-behavior-y: none;
 }
 /* Set core root defaults */
 html:focus-within {
@@ -28,7 +29,28 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--body-bgcolor);
   font-size: 16px;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  cursor: crosshair;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior-y: none;
+  font-family: "Inter", sans-serif;
+
+  &.enable-scroll{
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  
+
 }
+
 img,
 picture,
 video,
