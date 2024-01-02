@@ -15,7 +15,7 @@ export function NavMenu() {
       </NavIcon>
       <NavLinks open={isNavOpen}>
         <LinkNav>Home</LinkNav>
-        <LinkNav>About </LinkNav>
+        <LinkNav href="/about">About </LinkNav>
         <LinkNav>Contact</LinkNav>
       </NavLinks>
     </NavContainer>

@@ -59,6 +59,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=family=Inter:wght@500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <StyledComponentsRegistry>
         <ThemeClient>

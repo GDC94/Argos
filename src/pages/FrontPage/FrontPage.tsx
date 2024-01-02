@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { useEffect } from "react";
-
 import { NavMenu } from "@/components/NavMenu";
 import ContainerWrap from "@/components/commons/ContainerWrap/ContainerWrap";
 
@@ -12,7 +8,7 @@ import Eyes from "./components/Eyes";
 
 function FrontPage() {
   return (
-    <ContainerWrap withBackground>
+    <ContainerWrap>
       <Wrapper>
         <NavMenu />
         <Eyes />

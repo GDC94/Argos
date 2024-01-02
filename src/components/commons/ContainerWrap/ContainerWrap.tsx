@@ -4,12 +4,11 @@ import { Container } from "./ContainerWrap.styles";
 
 interface ContainerWrap {
   children: React.ReactNode;
-  withBackground?: boolean;
   className?: string;
 }
 
-function ContainerWrap({ children, withBackground, className }: ContainerWrap) {
-  return <Container className={classes(className, { withBackground })}>{children}</Container>;
+function ContainerWrap({ children, className }: ContainerWrap) {
+  return <Container className={classes(className)}>{children}</Container>;
 }
 
 export default ContainerWrap;

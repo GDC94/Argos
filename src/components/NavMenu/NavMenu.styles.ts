@@ -8,7 +8,7 @@ interface NavProps {
 export const NavContainer = styled.div<NavProps>`
   position: absolute;
   top: 60px;
-  right: calc((100vw - (1600px - 60px)) / 2);
+  right: calc((100vw - (1600px - 140px)) / 2);
 
   @media screen and (max-width: 1680px) {
     right: 30px;
@@ -61,12 +61,9 @@ export const NavIcon = styled.div<NavProps>`
 `;
 
 export const NavIconLine = styled.div<NavProps>`
-  height: 2px;
+  height: 3px;
   width: 100%;
-  background-color: #ffffff;
-  box-shadow:
-    rgba(0, 0, 0, 0.1) 0 1px 1px,
-    rgba(0, 0, 0, 0.1) 0 2px 2px;
+  background-color: #fff;
   pointer-events: none;
   transition: transform 0.5s cubic-bezier(0.7, 0, 0, 1);
 `;
@@ -92,9 +89,8 @@ export const NavLinks = styled.nav<NavProps>`
     margin: 0;
     color: white;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: 3px;
-    text-shadow: 0 2px 5px rgb(0 0 0 / 20%);
     font-size: 14px;
     text-decoration: none;
     position: relative;
@@ -104,7 +100,7 @@ export const NavLinks = styled.nav<NavProps>`
   ${({ open }) =>
     open &&
     css`
-      transition: clip-path 0.7s cubic-bezier(0.7, 0, 0, 1);
+      transition: clip-path 0.8s cubic-bezier(0.7, 0, 0, 1);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     `}
 `;
@@ -118,7 +114,6 @@ export const LinkNav = styled.a`
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 3px;
-  text-shadow: 0 2px 5px rgb(0 0 0 / 20%);
   font-size: 14px;
   text-decoration: none;
   position: relative;
